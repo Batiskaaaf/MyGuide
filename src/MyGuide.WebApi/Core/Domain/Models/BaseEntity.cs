@@ -13,5 +13,5 @@ public abstract class BaseEntity
     /// <summary>
     /// Entity creation date
     /// </summary>
-    public DateTime CreationDate { get; set; }
+    public DateTime CreationDate { get; set; } = DateTime.Now;
 }

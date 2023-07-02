@@ -5,16 +5,17 @@ namespace MyGuide.WebApi.Core.Domain.Models;
 /// </summary>
 public class Guide : BaseEntity
 {
-
     /// <summary>
-    /// Id of guide owner
+    /// Identifier of guide owner
     /// </summary>
+    [Required]
     public Guid UserId { get; set; }
 
     /// <summary>
     /// Guide title
     /// </summary>
     [MaxLength(50)]
+    [Required]
     public string Title { get; set; }
 
     /// <summary>
@@ -26,7 +27,8 @@ public class Guide : BaseEntity
     /// <summary>
     /// Guide stars
     /// </summary>
-    public int Stars { get; set; }
+    [Required]
+    public int Stars { get; set; } = 0;
 
     /// <summary>
     /// Guide places

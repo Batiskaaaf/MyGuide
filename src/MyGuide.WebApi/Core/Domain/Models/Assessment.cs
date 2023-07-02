@@ -15,15 +15,18 @@ public class Assessment : BaseEntity
     /// <summary>
     /// Assessment score
     /// </summary>
+    [Required]
     public float Score { get; set; }
 
     /// <summary>
     /// Place that was assessed
     /// </summary>
+    [Required]
     public Place Place { get; set; }
 
     /// <summary>
     /// Criterion of assessment
     /// </summary>
+    [Required]
     public Criterion Criterion { get; set; }
 }

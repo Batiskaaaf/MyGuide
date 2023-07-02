@@ -26,6 +26,7 @@ public class Place : BaseEntity
     /// <summary>
     /// Guide that contains this place
     /// </summary>
+    [Required]
     public Guide Guide { get; set; }
 
     /// <summary>

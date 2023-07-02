@@ -18,5 +18,6 @@ public class Criterion : BaseEntity
     /// <summary>
     /// Guide that contains this Criterion
     /// </summary>
+    [Required]
     public Guide Guide { get; set; }
 }
