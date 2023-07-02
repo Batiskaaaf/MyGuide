@@ -1,5 +1,4 @@
-
-namespace MyGuide.WebApi.Core.Interfaces;
+namespace MyGuide.WebApi.Core.Domain.Interfaces;
 
 /// <summary>
 /// Generic interface for working with domain models
