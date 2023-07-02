@@ -15,7 +15,6 @@ public class Assessment : BaseEntity
     /// </summary>
     public float Score { get; set; }
 
-
     /// <summary>
     /// Place that was assessed
     /// </summary>

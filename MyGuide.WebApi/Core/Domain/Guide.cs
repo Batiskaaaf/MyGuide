@@ -6,6 +6,10 @@ namespace MyGuide.WebApi.Core.Domain;
 public class Guide : BaseEntity
 {
     /// <summary>
+    /// Id of guide owner
+    /// </summary>
+    public Guid UserId { get; set; }
+    /// <summary>
     /// Guide title
     /// </summary>
     public string Title { get; set; }
