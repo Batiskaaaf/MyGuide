@@ -1,4 +1,4 @@
-namespace MyGuide.WebApi.Core.Domain;
+namespace MyGuide.WebApi.Core.Domain.Models;
 
 /// <summary>
 /// Abstract entity that represents default coloumns for each row in database 

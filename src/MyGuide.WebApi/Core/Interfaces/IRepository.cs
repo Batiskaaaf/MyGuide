@@ -1,3 +1,4 @@
+
 namespace MyGuide.WebApi.Core.Interfaces;
 
 /// <summary>

@@ -1,5 +1,5 @@
 
-namespace MyGuide.WebApi.Core.Domain;
+namespace MyGuide.WebApi.Core.Domain.Models;
 
 /// <summary>
 /// Entity that represents an assessment by special criterion of a place

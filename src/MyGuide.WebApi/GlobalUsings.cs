@@ -7,3 +7,4 @@ global using Microsoft.EntityFrameworkCore.Infrastructure;
 global using MyGuide.WebApi.Extensions;
 global using System.Linq.Expressions;
 global using MyGuide.WebApi.Core.Interfaces;
+global using MyGuide.WebApi.Core.Domain.Models;

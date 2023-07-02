@@ -1,4 +1,4 @@
-namespace MyGuide.WebApi.Core.Domain;
+namespace MyGuide.WebApi.Core.Domain.Models;
 
 /// <summary>
 /// Entity that represents a guide
