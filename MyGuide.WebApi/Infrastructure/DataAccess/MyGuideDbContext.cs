@@ -1,6 +1,4 @@
-
-namespace MyGuide.WebApi.Infrastructure.Data;
-
+namespace MyGuide.WebApi.Infrastructure.DataAccess;
 
 /// <summary>
 /// EfCore context for working with database
@@ -38,6 +36,5 @@ public class MyGuideDbContext : DbContext
     /// Represents Assessment table in db
     /// </summary>
     public DbSet<Assessment> Assessments { get; set; }
-
 
 }
