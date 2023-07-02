@@ -13,6 +13,7 @@ public class Commentary : BaseEntity
     /// <summary>
     /// Commentary data
     /// </summary>
+    [MaxLength(250)]
     public string Data { get; set; }
 
     /// <summary>

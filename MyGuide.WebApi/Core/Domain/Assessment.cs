@@ -1,3 +1,4 @@
+
 namespace MyGuide.WebApi.Core.Domain;
 
 /// <summary>
@@ -8,6 +9,7 @@ public class Assessment : BaseEntity
     /// <summary>
     /// The reason of the assessment
     /// </summary>
+    [MaxLength(100)]
     public string Description { get; set; }
 
     /// <summary>

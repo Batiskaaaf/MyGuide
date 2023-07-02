@@ -5,14 +5,17 @@ namespace MyGuide.WebApi.Core.Domain;
 /// </summary>
 public class Place : BaseEntity
 {
+
     /// <summary>
     /// Place title
     /// </summary>
+    [MaxLength(50)]
     public string Title { get; set; }
 
     /// <summary>
     /// Place description
     /// </summary>
+    [MaxLength(250)]
     public string Description { get; set; }
 
     /// <summary>
