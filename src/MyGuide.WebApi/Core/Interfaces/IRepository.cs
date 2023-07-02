@@ -17,27 +17,33 @@ public interface IRepository<T> where T : BaseEntity
     /// Converts to Queryable
     /// </summary>
     /// <returns>IQueryable&lt;<typeparamref name="T"/>&gt;</returns>
-    public Task<IQueryable<T>> AsQueryable();
+    public IQueryable<T> AsQueryable();
 
     /// <summary>
     /// Creates a new entity
     /// </summary>
     /// <param name="entity"><typeparamref name="T"/></param>
     /// <returns>Guid of new entity</returns>
-    public Task<Guid> CreateAsync(T entity);
+    public Task<Guid> InsertAsync(T entity);
 
     /// <summary>
     /// Updates entity
     /// </summary>
     /// <param name="entity">Updated <typeparamref name="T"/> entity</param>
-    /// <returns>Updated entity</returns>
-    Task<T> UpdateAsync(T entity);
+    /// <param name="id">Entity identifier</param>
+    Task UpdateAsync(Guid id, T entity);
 
     /// <summary>
     /// Deletes entity
     /// </summary>
     /// <param name="entity">Entity <typeparamref name="T"/> to delete</param>
-    Task<T> DeleteAsync(T entity);
+    void Delete(T entity);
+
+    /// <summary>
+    /// Delete entity by id
+    /// </summary>
+    /// <param name="id">Entity identifier</param>
+    Task DeleteAsync(Guid id);
 
     /// <summary>
     /// Saves changes

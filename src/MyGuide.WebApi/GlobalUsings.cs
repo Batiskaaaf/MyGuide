@@ -6,3 +6,4 @@ global using MyGuide.WebApi.Infrastructure.DataAccess;
 global using Microsoft.EntityFrameworkCore.Infrastructure;
 global using MyGuide.WebApi.Extensions;
 global using System.Linq.Expressions;
+global using MyGuide.WebApi.Core.Interfaces;
