@@ -1,26 +1,22 @@
-
 namespace MyGuide.WebApi.Controllers;
-
 
 /// <summary>
 /// Controller for managing user guids
 /// </summary>
-[Route("[controller]")]
+[Route("{userId}/[controller]")]
 [ApiController]
-public class GuideController : ControllerBase
+public class GuidesController : ControllerBase
 {
     /// <summary>
     /// Ctor with dependencies
     /// </summary>
-    public GuideController()
+    public GuidesController()
     {
-        
     }
 
     /// <summary>
     /// Description
     /// </summary>
-    [Authorize]
     [HttpGet]
     public ActionResult<string> GetGuidesAsync()
     {
