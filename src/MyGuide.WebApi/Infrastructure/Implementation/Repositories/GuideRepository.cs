@@ -16,7 +16,7 @@ public class GuideRepository : IGuideRepository
     }
 
     /// <inheritdoc />
-    public async Task<IEnumerable<Guide>> GetGuidesByUserIdAsync(Guid id)
+    public async Task<IEnumerable<Guide>> GetByUserId(Guid id)
         => await context.Guides.Where(g => g.UserId == id).ToListAsync();
         
 }

@@ -10,5 +10,5 @@ public interface IGuideRepository
     /// </summary>
     /// <param name="id">User idnetifier</param>
     /// <returns>List of guides</returns>
-    Task<IEnumerable<Guide>> GetGuidesByUserIdAsync(Guid id);
+    Task<IEnumerable<Guide>> GetByUserId(Guid id);
 }

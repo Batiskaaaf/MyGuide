@@ -35,7 +35,7 @@ public class GuideService : IGuideService
     /// <inheritdoc />
     public async Task<IEnumerable<GuideDto>> GetUsersGuidesAsync(Guid id)
     {
-        var guides = await guideRepository.GetGuidesByUserIdAsync(id);
+        var guides = await guideRepository.GetByUserId(id);
         var guidesDto = mapper.Map<IEnumerable<GuideDto>>(guides);
         return guidesDto;
     }
