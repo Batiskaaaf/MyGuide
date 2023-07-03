@@ -1,0 +1,31 @@
+Guides:
+[Unauth]
+api/{UserId}/Guides                 [GET]       Get users guides
+[Auth]
+api/Guides/                         [POST]      Create new guide
+[Auth]
+api/Guides/{guideId}                [DELETE]    Delete guide
+[Auth]
+api/Guides/{guideId}                          [PUT]       Update guide (Title, description)
+[Auth]
+api/Guides/{guideId}/like           [POST]      Like/Unlike guide
+[Auth]
+api/Guides/{guideId}/comment        [POST]      Comment guide
+[Auth]
+api/Guides/{guideId}/Criterion      [POST]      Add new createrion
+[Auth]
+api/Guides/{guideId}/Criterion{criterionId}      [PUT]       Update criterion
+[Auth]
+api/Guides/{guideId}/Criterion/{criterionId}      [DELETE]       Delete criterion
+
+
+
+Places:
+[Auth]
+api/Guides/{guideId}/Places         [POST]      Add new place to guide 
+[Unauth]
+api/Guides/{guideId}/Places         [GET]       Get all guide Places
+[Auth]
+api/Guides/{guideId}/Places{placeId}  [PUT]       Update place
+[Auth]
+api/Guides/{guideId}/Places{placeId}  [DELETE]       Update place
