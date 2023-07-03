@@ -1,4 +1,3 @@
-
 namespace MyGuide.WebApi.Core.Domain.Models;
 
 /// <summary>
