@@ -1,3 +1,5 @@
+
+
 namespace MyGuide.WebApi.Extensions;
 
 
@@ -22,6 +24,26 @@ public static class RegistarExtensions
             options.UseSqlServer(configuration.GetRequiredConnectionString("MyGuideWebApiDb"), ConfigureSqlOptions);
         });
 
+        return services;
+    }
+
+    /// <summary>
+    /// Swagger gen configuration method
+    /// </summary>   
+    public static IServiceCollection ConfigureSwaggerGen(this IServiceCollection services)
+    {
+        services.AddSwaggerGen(options =>
+        {
+            options.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Version = "v1",
+                Title = "MyGuide.WebApi",
+                Description = "ASP.NET Core Web Api for managing guides"
+            });
+            
+            var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+        });
         return services;
     }
 }

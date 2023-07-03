@@ -4,11 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.RegistarDatabaseContext(builder.Configuration);
 
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.ConfigureSwaggerGen();
 
 var app = builder.Build();
 
@@ -24,6 +25,6 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers().RequireAuthorization("ApiScope");
+app.MapControllers();
 
 app.Run();
