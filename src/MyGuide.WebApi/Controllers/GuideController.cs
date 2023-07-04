@@ -1,5 +1,3 @@
-
-
 namespace MyGuide.WebApi.Controllers;
 
 /// <summary>

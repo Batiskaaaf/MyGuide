@@ -3,6 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.RegistarDatabaseContext(builder.Configuration);
+builder.Services.AddIdentityService();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddAuthorization();

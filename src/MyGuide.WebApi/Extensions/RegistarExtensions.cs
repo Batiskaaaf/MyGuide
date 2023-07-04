@@ -46,4 +46,13 @@ public static class RegistarExtensions
         });
         return services;
     }
+
+    /// <summary>
+    /// Identity service register method
+    /// </summary>
+    public static IServiceCollection AddIdentityService(this IServiceCollection services)
+    {
+        services.AddTransient<IIdentityService, IdnetityService>();
+        return services;
+    }
 }
