@@ -1,6 +1,6 @@
 Guides:
 [Unauth]
-api/{UserId}/Guides                 [GET]       Get users guides
+api/{UserId}/Guides                 [GET]       Get users guides                            DONE
 [Auth]
 api/Guides/                         [POST]      Create new guide
 [Auth]
